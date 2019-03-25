@@ -1,3 +1,9 @@
+# dist fix detail
+
+L:8  parcelRequire = (function (modules, cache, entry, globalName) {  >>  window.parcelRequire = (function (modules, cache, entry, globalName) {
+
+L:2738 var global = arguments[3];  >>  var global = window;
+
 # Visual Programming for toio&trade; (beta version)
 
 This aims at serving a visual programming environment for toio&trade;
