@@ -2736,7 +2736,7 @@ module.exports = Array.isArray || function (arr) {
 },{}],"dskh":[function(require,module,exports) {
 
 var global = window;
-/*!
+  /*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
@@ -7664,6 +7664,61 @@ module.exports = {
   "toio.whenTouchedMenu.yellowCell": "きいろのマス",
   "toio.whenTouchedMenu.blueCell": "あおのマス"
 };
+},{}],"0dcf":[function(require,module,exports) {
+module.exports = {
+  "toio.moveFor": "向[DIRECTION]以[SPEED]%速度移动[DURATION]秒",
+  "toio.moveForMenu.forward": "前",
+  "toio.moveForMenu.backward": "后",
+  "toio.rotateFor": "向[DIRECTION]以[SPEED]%速度转向[DURATION]秒",
+  "toio.rotateForMenu.left": "左",
+  "toio.rotateForMenu.right": "右",
+  "toio.moveWheelsFor": "左轮以[LEFT_SPEED]%速度、右轮以[RIGHT_SPEED]%速度移动[DURATION]秒",
+  "toio.moveTo": "向x坐标[X]、y坐标[Y]移动",
+  "toio.pointInDirection": "转向[DIRECTION]度",
+  "toio.stopWheels": "停下轮子",
+  "toio.setLightColorFor": "设置颜色[COLOR]点亮灯[DURATION]秒",
+  "toio.turnOffLight": "关闭灯",
+  "toio.playNoteFor": "鸣笛[NOTE]持续[DURATION]秒",
+  "toio.stopNote": "停止鸣笛",
+  "toio.stateTypeMenu.x": "x坐标",
+  "toio.stateTypeMenu.y": "y坐标",
+  "toio.stateTypeMenu.direction": "转向",
+  "toio.moveToOnGrid": "向格子列[COLUMN]、行[ROW]移动",
+  "toio.getColumnOrRowIndex": "格子的[MAT_AXES]序号",
+  "toio.getColumnOrRowIndexMenu.column": "列",
+  "toio.getColumnOrRowIndexMenu.row": "行",
+  "toio.getColumnIndex": "格子的列序号",
+  "toio.getRowIndex": "格子的行序号",
+  "toio.whenTouched": "碰到[TYPE]时",
+  "toio.isTouched": "碰到[TYPE]",
+  "toio.whenTouchedMenu.mat": "垫子",
+  "toio.whenTouchedMenu.frontCard": "向前卡片",
+  "toio.whenTouchedMenu.backCard": "向后卡片",
+  "toio.whenTouchedMenu.leftCard": "向左卡片",
+  "toio.whenTouchedMenu.rightCard": "向右卡片",
+  "toio.whenTouchedMenu.goCard": "Go卡片",
+  "toio.whenTouchedMenu.typhoonCard": "台风卡片",
+  "toio.whenTouchedMenu.rushCard": "冲刺卡片",
+  "toio.whenTouchedMenu.autoTackleCard": "自动攻击卡片",
+  "toio.whenTouchedMenu.randomCard": "随机卡片",
+  "toio.whenTouchedMenu.pushPowerUpCard": "冲撞提升卡片",
+  "toio.whenTouchedMenu.strutPowerUpCard": "碰撞提升卡片",
+  "toio.whenTouchedMenu.sideAttackCard": "侧翼攻击卡片",
+  "toio.whenTouchedMenu.easyModeCard": "简单模式卡片",
+  "toio.whenTouchedMenu.anyCard": "任何卡片",
+  "toio.whenTouchedMenu.spinSticker": "眩晕标签",
+  "toio.whenTouchedMenu.shockSticker": "惊吓标签",
+  "toio.whenTouchedMenu.wobbleSticker": "摇晃标签",
+  "toio.whenTouchedMenu.panicSticker": "恐惧标签",
+  "toio.whenTouchedMenu.speedUpSticker": "加速标签",
+  "toio.whenTouchedMenu.speedDownSticker": "减速标签",
+  "toio.whenTouchedMenu.anySticker": "任何标签",
+  "toio.whenTouchedMenu.whiteCell": "白色格子",
+  "toio.whenTouchedMenu.redCell": "红色格子",
+  "toio.whenTouchedMenu.greenCell": "绿色格子",
+  "toio.whenTouchedMenu.yellowCell": "黄色格子",
+  "toio.whenTouchedMenu.blueCell": "蓝色格子"
+};
 },{}],"yrxK":[function(require,module,exports) {
 "use strict";
 /**
@@ -7677,10 +7732,11 @@ exports.__esModule = true;
 var translations = {
   en: require('./en.json'),
   ja: require('./ja.json'),
-  'ja-Hira': require('./ja-Hira.json')
+  'ja-Hira': require('./ja-Hira.json'),
+  'zh-cn': require('./zh-CN.json')
 };
 exports["default"] = translations;
-},{"./en.json":"YjP5","./ja.json":"jj3x","./ja-Hira.json":"iYIC"}],"seFL":[function(require,module,exports) {
+},{"./en.json":"YjP5","./ja.json":"jj3x","./ja-Hira.json":"iYIC","./zh-CN.json":"0dcf"}],"seFL":[function(require,module,exports) {
 "use strict";
 /**
  * Copyright (c) Sony Interactive Entertainment Inc.
@@ -7971,7 +8027,6 @@ module.exports = {
   "private": true,
   "scripts": {
     "build": "parcel build --no-minify src/index.ts",
-    "webpack": "webpack",
     "lint": "tslint 'src/**/*.ts' 'tests/**/*.ts' && markdownlint README.md",
     "test": "jest tests",
     "test:watch": "yarn test --watch",
@@ -7980,15 +8035,12 @@ module.exports = {
   },
   "dependencies": {
     "base64-js": "^1.3.0",
-    "file-loader": "^3.0.1",
     "format-message": "^6.2.1",
     "p-cancelable": "^1.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-intl": "^2.8.0",
-    "scratch-vm": "^0.2.0-prerelease.20190314205043",
-    "ts-loader": "^5.3.3",
-    "url-loader": "^1.1.2"
+    "scratch-vm": "^0.2.0-prerelease.20190314205043"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
@@ -7999,9 +8051,7 @@ module.exports = {
     "parcel-plugin-url-loader": "^1.3.1",
     "ts-jest": "^24.0.0",
     "tslint": "^5.14.0",
-    "typescript": "^3.3.4000",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "typescript": "^3.3.3333"
   }
 };
 },{}],"SewU":[function(require,module,exports) {
