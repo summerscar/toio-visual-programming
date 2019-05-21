@@ -9,7 +9,7 @@ import toioLogo from '../images/logo.png'
 import coreCubeImageL from '../images/cube_l.svg'
 import coreCubeImageM from '../images/cube_m.svg'
 
-import './about'
+// import './about'
 
 const SCRATCH_TRADEMARKS = [
   'Cat',
