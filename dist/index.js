@@ -2735,7 +2735,7 @@ module.exports = Array.isArray || function (arr) {
 
 },{}],"dskh":[function(require,module,exports) {
 
-var global = window;
+  var global = window;
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -13534,8 +13534,8 @@ function () {
   Object.defineProperty(Gui.prototype, "INFO", {
     get: function get() {
       return {
-        name: 'toio',
-        extensionId: 'toio',
+        name: 'toio-duplicated',
+        extensionId: 'toio2',
         collaborator: 'Sony Interactive Entertainment Inc.',
         iconURL: logo_png_1["default"],
         insetIconURL: cube_m_svg_1["default"],
@@ -13647,9 +13647,9 @@ function () {
     return {
       id: ToioBlocks.EXTENSION_NAME,
       blockIconURI: cube_s_svg_1["default"],
-      colour: '#00aeca',
-      colourSecondary: '#0094ab',
-      colourTertiary: '#0189a0',
+      colour: '#f9630e',
+      colourSecondary: '#f95064',
+      colourTertiary: '#c8630e',
       showStatusButton: true,
       blocks: this.blocks.info,
       menus: this.blocks.menus
@@ -13664,7 +13664,7 @@ function () {
     this.blocks.stop(true);
   };
 
-  ToioBlocks.EXTENSION_NAME = 'toio';
+  ToioBlocks.EXTENSION_NAME = 'toio2';
   return ToioBlocks;
 }();
 

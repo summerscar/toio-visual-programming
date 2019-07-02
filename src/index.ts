@@ -13,7 +13,7 @@ import coreCubeImage from './images/cube_s.svg'
 import translations from './translations'
 
 class ToioBlocks {
-  private static EXTENSION_NAME = 'toio'
+  private static EXTENSION_NAME = 'toio2'
 
   private runtime: any
   private coreCube: CoreCube
@@ -53,9 +53,9 @@ class ToioBlocks {
     return {
       id: ToioBlocks.EXTENSION_NAME,
       blockIconURI: coreCubeImage,
-      colour: '#00aeca',
-      colourSecondary: '#0094ab',
-      colourTertiary: '#0189a0',
+      colour: '#f9630e',
+      colourSecondary: '#f95064',
+      colourTertiary: '#c8630e',
       showStatusButton: true,
       blocks: this.blocks.info,
       menus: this.blocks.menus
