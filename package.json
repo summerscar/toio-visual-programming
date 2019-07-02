@@ -1,5 +1,5 @@
 {
-  "name": "toio-visual-programming",
+  "name": "toio-visual-programming-2",
   "version": "1.0.0",
   "description": "Visual programming for \"toio\"",
   "main": "./dist/index.js",
