@@ -26,7 +26,7 @@ const SCRATCH_TRADEMARKS = [
 class Gui {
   public get INFO() {
     return {
-      name: 'toio-duplicated',
+      name: 'toio2',
       extensionId: 'toio2',
       collaborator: 'Sony Interactive Entertainment Inc.',
       iconURL: toioLogo,

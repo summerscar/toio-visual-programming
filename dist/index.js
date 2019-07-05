@@ -13534,7 +13534,7 @@ function () {
   Object.defineProperty(Gui.prototype, "INFO", {
     get: function get() {
       return {
-        name: 'toio-duplicated',
+        name: 'toio2',
         extensionId: 'toio2',
         collaborator: 'Sony Interactive Entertainment Inc.',
         iconURL: logo_png_1["default"],
