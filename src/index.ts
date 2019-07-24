@@ -53,8 +53,8 @@ class ToioBlocks {
     return {
       id: ToioBlocks.EXTENSION_NAME,
       blockIconURI: coreCubeImage,
-      colour: '#f9630e',
-      colourSecondary: '#f95064',
+      color1: '#f9630e',
+      color2: '#f95064',
       colourTertiary: '#c8630e',
       showStatusButton: true,
       blocks: this.blocks.info,

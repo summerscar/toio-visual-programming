@@ -79,7 +79,10 @@ export default class Blocks {
     const result = {}
     for (const key of Object.keys(blocks.menus)) {
       const menu = blocks.menus[key]
-      result[menu.menu] = menu.values
+      result[menu.menu] = {
+        acceptReporters: false,
+        items: menu.values
+      }
     }
 
     return result

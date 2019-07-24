@@ -7990,7 +7990,10 @@ function () {
     for (var _i = 0, _a = Object.keys(blocks.menus); _i < _a.length; _i++) {
       var key = _a[_i];
       var menu = blocks.menus[key];
-      result[menu.menu] = menu.values;
+      result[menu.menu] = {
+        acceptReporters: false,
+        items: menu.values
+      };
     }
 
     return result;
@@ -13647,8 +13650,8 @@ function () {
     return {
       id: ToioBlocks.EXTENSION_NAME,
       blockIconURI: cube_s_svg_1["default"],
-      colour: '#f9630e',
-      colourSecondary: '#f95064',
+      color1: '#f9630e',
+      color2: '#f95064',
       colourTertiary: '#c8630e',
       showStatusButton: true,
       blocks: this.blocks.info,
