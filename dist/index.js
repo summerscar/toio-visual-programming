@@ -2736,7 +2736,7 @@ module.exports = Array.isArray || function (arr) {
 },{}],"dskh":[function(require,module,exports) {
 
   var global = window;
-  /*!
+/*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
@@ -13650,8 +13650,8 @@ function () {
     return {
       id: ToioBlocks.EXTENSION_NAME,
       blockIconURI: cube_s_svg_1["default"],
-      colour: '#00aeca',
-      colourSecondary: '#0094ab',
+      color1: '#00aeca',
+      color2: '#0094ab',
       colourTertiary: '#0189a0',
       showStatusButton: true,
       blocks: this.blocks.info,
