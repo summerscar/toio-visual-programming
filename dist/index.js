@@ -2735,8 +2735,8 @@ module.exports = Array.isArray || function (arr) {
 
 },{}],"dskh":[function(require,module,exports) {
 
-var global = window;
-/*!
+  var global = window;
+  /*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
@@ -7990,7 +7990,10 @@ function () {
     for (var _i = 0, _a = Object.keys(blocks.menus); _i < _a.length; _i++) {
       var key = _a[_i];
       var menu = blocks.menus[key];
-      result[menu.menu] = menu.values;
+      result[menu.menu] = {
+        acceptReporters: false,
+        items: menu.values
+      };
     }
 
     return result;
